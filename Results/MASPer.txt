@@ -1,4 +1,4 @@
-Ncrops	AvgTime	Variance
+Ncrops, Avg Time, Variance
 1   10653
 5   90767   83953   
 10  36737   45252.6

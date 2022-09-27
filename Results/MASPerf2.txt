@@ -1,4 +1,4 @@
-NAgents	AvgTime	Variance
+NAgents, Avg Time, Variance
 1   41541.4 40760.4
 5   7455.46 6611.85
 10  3829.48 3359.78
