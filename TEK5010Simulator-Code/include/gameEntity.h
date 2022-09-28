@@ -5,7 +5,11 @@
 #include <boost/geometry.hpp>
 #include <vector>
 
-
+/*! \file gameEntity.h
+    \brief Define Crops and Agents CLASS
+    
+  
+*/
 #define DEFAULT_SPEED 10.0
 #define DEFAULT_TR 5.0
 #define BORDERSIZE 1000
