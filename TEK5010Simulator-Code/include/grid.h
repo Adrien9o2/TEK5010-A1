@@ -3,6 +3,14 @@
 #include <algorithm>
 
 
+/*! \file grid.h
+    \brief Define Grid class, wich contains all agents, crops,
+    provide update fonctions, and utility for visualization
+    
+  
+*/
+
+
 #define WINDOW_SIZE 720
 #define AGENTWEEDWIDHT 16
 #define AGENTHEIGHT 9

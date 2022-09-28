@@ -1,14 +1,21 @@
 #include "../include/gameEntity.h"
 
 
+
+/*! \file gameEntity.h
+    \brief Inplement Crops and Agents CLASS
+    
+  
+*/
+
 int Agent::TotalnumberOfAgent = 0;
 int WeedCrop::TotalnumberOfCrops = 0;
 
 WeedCrop::WeedCrop(int date)
 {
-    x = rand()%1000 + (rand()%100)/100;
+    x = rand()%1000 + (rand()%100)/100; //Random init
     y = rand()%1000 + (rand()%100)/100;
-    issuedDate = date;
+    issuedDate = date; // Creation date to keep track of performances
     obtainedDate = -1;
     obtained = false;
     
@@ -26,7 +33,7 @@ WeedCrop::~WeedCrop()
 
 Agent::Agent(bool randompos,double v_input , double Tr_input)
 {
-    if(randompos)
+    if(randompos) //Random position init
     {
         x = rand()%(BORDERSIZE-1) + (rand()%100)/100;
         y = rand()%(BORDERSIZE-1) + (rand()%100)/100;
@@ -128,18 +135,18 @@ Border Agent::isPosOkay(double x, double y)
     return Border::UNDEF;
 }
 
-void Agent::updatePos(double dt,double degRange)
+void Agent::updatePos(double dt,double degRange) //Update pos of one Agent
 {   
-    int degRangeint = 1000*degRange;
-    bool sgn = rand()%2;
-    int thetaRandint = rand()%degRangeint;
-    double thetaRand = ((((double)(thetaRandint))*(M_PI))/(1000.0*180.0));
+    int degRangeint = 1000*degRange; //Generating random angle with 10^-3 precision
+    bool sgn = rand()%2; // Generating random sign
+    int thetaRandint = rand()%degRangeint; //Generating random angle with 10^-3 precision
+    double thetaRand = ((((double)(thetaRandint))*(M_PI))/(1000.0*180.0)); //Converting to RAD
     if(sgn == true)
     {
-        thetaRand=-thetaRand;
+        thetaRand=-thetaRand; //Applying random sign
     }
-    double thetaTemp = thetaRand + theta;
-    if(thetaTemp > M_PI)
+    double thetaTemp = thetaRand + theta; // Calculating next Theta
+    if(thetaTemp > M_PI)//Rescaling between [-PI,PI]
     {
         thetaTemp -=2*M_PI;
     }
@@ -147,18 +154,18 @@ void Agent::updatePos(double dt,double degRange)
     {
         thetaTemp +=2*M_PI;
     }
-    double xtemp =  x+(v/3.6)*dt*cos(thetaTemp);
-    double ytemp =  y+(v/3.6)*dt*sin(thetaTemp);
-    if(isPosOkay(xtemp,ytemp)==Border::ok)
+    double xtemp =  x+(v/3.6)*dt*cos(thetaTemp); // Calculating next X
+    double ytemp =  y+(v/3.6)*dt*sin(thetaTemp); // Calculating next Y 
+    if(isPosOkay(xtemp,ytemp)==Border::ok) //Checking for Border collision
     {
-        theta = thetaTemp;
+        theta = thetaTemp; // if no collision -> temp x, temp y, temp theta become next x next y next theta
         x = xtemp;
         y = ytemp;
 
     }
     else
     {
-        theta += M_PI;
+        theta += M_PI; //else if collision Theta +=PI
         if(theta > M_PI)
         {
             theta -=2*M_PI;
@@ -167,11 +174,11 @@ void Agent::updatePos(double dt,double degRange)
         {
             theta+=2*M_PI;
         }
-        x =  x+(v/3.6)*dt*cos(theta);
+        x =  x+(v/3.6)*dt*cos(theta); //Going Backward
         y =  y+(v/3.6)*dt*sin(theta);
         
     }
-    if(isPosOkay(x,y)!=Border::ok)
+    if(isPosOkay(x,y)!=Border::ok) // Safety if something crazy happened
     {
         x = BORDERSIZE/2;
         y = BORDERSIZE/2;

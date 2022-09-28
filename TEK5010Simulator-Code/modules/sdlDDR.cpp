@@ -5,6 +5,13 @@
 #include <iostream>
 
 
+/*! \file sdlDDR.h
+    \brief Perform simulation according to user inputs
+    
+  
+*/
+
+
 #define REFRESHTIME 16
 #define MAX_SKIP 10
 
@@ -20,7 +27,7 @@ int main(int argc, char** argv)
 void mainsdl(mainSdlInput input)
 {
 
-    srand(time(NULL));
+    srand(time(NULL)); //seed for random number generation
     Grid agrid(input.N,input.Nc);
      
 
@@ -31,14 +38,14 @@ void mainsdl(mainSdlInput input)
 
 
 
-    float dt = 1.0;
-    int dt_int_ms = 1000;
-    int delay_sim = (dt_int_ms)/input.timeMult;
-    int simTime = 0;
+    float dt = 1.0; // Simulation step
+    int dt_int_ms = 1000; // Simulation step (ms)
+    int delay_sim = (dt_int_ms)/input.timeMult; 
+    unsigned long int simTime = 0; //Simulation time (ms)
 
 
     
-    if(input.renderImage)
+    if(input.renderImage) //If user want visualization
     {
         float refreshtimef = REFRESHTIME;
         int refreshtime = refreshtimef;
@@ -214,18 +221,18 @@ void mainsdl(mainSdlInput input)
         IMG_Quit();
 
     }
-    else
+    else // No visualization
     {
-        while(agrid.obtainedWeedCrops.size() < input.numberOfCropsCollectedBeforeStop)
+        while(agrid.obtainedWeedCrops.size() < input.numberOfCropsCollectedBeforeStop) //Wait to collect the specified number of crops
         {
-            agrid.updateAgents((simTime+dt_int_ms),dt);
-            simTime+=dt_int_ms;
+            agrid.updateAgents((simTime+dt_int_ms),dt); //Update grid
+            simTime+=dt_int_ms; // Increase simulation time
 
         }
 
     }
     
-
+    //Show metrics
     std::cout<<"--------Simulation END--------\n"<<std::endl;
 
     std::cout<<"Results : "<<std::endl;
