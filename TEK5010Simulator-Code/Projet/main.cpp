@@ -1,6 +1,14 @@
 #include "../include/sdlDDR.h"
 #include <iostream>
 
+
+/*! \file main.cpp
+    \brief Acquire user inputs and launch simulation
+    
+  
+*/
+
+
 mainSdlInput input = {1,1,5.0,10.0,1,true,true,100};
 
 

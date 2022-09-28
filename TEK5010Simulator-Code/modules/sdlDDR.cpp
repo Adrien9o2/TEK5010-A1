@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-/*! \file sdlDDR.h
+/*! \file sdlDDR.cpp
     \brief Perform simulation according to user inputs
     
   
