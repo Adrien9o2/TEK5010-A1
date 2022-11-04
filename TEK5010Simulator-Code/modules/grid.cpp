@@ -53,7 +53,7 @@ void Grid::ConvertPos() // Convert x/y position to picture position for visualiz
 
 }
 
-void Grid::updateAgents(int date, double dt, double degRange ) //Perform one simulation step
+void Grid::updateAgents(long long int date, double dt, double degRange ) //Perform one simulation step
 {
     int toadd = 0; // Number of Crops to add at the end of the update
     for(auto it = std::begin(agents);it!=std::end(agents);it++)
@@ -70,7 +70,22 @@ void Grid::updateAgents(int date, double dt, double degRange ) //Perform one sim
 
                 
                         double dist = sqrt(pow((it->getX()-it2->getX()),2)+pow((it->getY()-it2->getY()),2));
-                        if( dist < it->getTr()) // if dist < Tr => Remove Crops it2
+                        double xbasepoint = it->getSearchRectangleBasePointX();
+                        double ybasepoint = it->getSearchRectangleBasePointY();
+                        double theta = it->getTheta();
+                        double cropx = it2->getSearchRectangleBasePointX(theta);
+                        double cropy = it2->getSearchRectangleBasePointY(theta);
+                        double v = it->getVmeterPerSecond();
+                        double Tr = it->getTr();
+                        bool checkRectangle = false;
+                        if( cropx > xbasepoint && cropx < xbasepoint + dt*v )
+                        {
+                            if(cropy > ybasepoint && cropy < ybasepoint + Tr )
+                            {
+                                checkRectangle = true;
+                            }
+                        }
+                        if( dist < Tr || checkRectangle ) // if dist < Tr => Remove Crops it2
                         {
 
                                 it2->acquireCrop(date); //Register acquired date to calculate performances

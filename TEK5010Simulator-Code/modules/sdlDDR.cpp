@@ -28,7 +28,7 @@ void mainsdl(mainSdlInput input)
 {
 
     srand(time(NULL)); //seed for random number generation
-    Grid agrid(input.N,input.Nc);
+    Grid agrid(input.N,input.Nc,input.v,input.Tr);
      
 
     
@@ -41,7 +41,7 @@ void mainsdl(mainSdlInput input)
     float dt = 1.0; // Simulation step
     int dt_int_ms = 1000; // Simulation step (ms)
     int delay_sim = (dt_int_ms)/input.timeMult; 
-    unsigned long int simTime = 0; //Simulation time (ms)
+    long long int simTime = 0; //Simulation time (ms)
 
 
     
@@ -235,27 +235,33 @@ void mainsdl(mainSdlInput input)
     //Show metrics
     std::cout<<"--------Simulation END--------\n"<<std::endl;
 
-    std::cout<<"Results : "<<std::endl;
-    std::cout<<"Simulation time : "<<simTime/1000.0<<" s"<<std::endl;
-    std::cout<<"NumberOfCropsFound : "<<agrid.obtainedWeedCrops.size()<<std::endl;
-    double avg = 0.0;
-    double variance = 0.0;
+    // std::cout<<"Results : "<<std::endl;
+    // std::cout<<"Simulation time : "<<simTime/1000.0<<" s"<<std::endl;
+    // std::cout<<"NumberOfCropsFound : "<<agrid.obtainedWeedCrops.size()<<std::endl;
+    long double avg = 0.0;
+    long double variance = 0.0;
+    int count_below_1_hour = 0;
+    int numCollected = agrid.obtainedWeedCrops.size();
     if(agrid.obtainedWeedCrops.size() !=0)
     {
         for(auto it : agrid.obtainedWeedCrops)
         {
-            avg+=(it.getDateObtained()-it.getDateIssued())/1000.0;
+            long double t = (it.getDateObtained()-it.getDateIssued())/1000.0;
+            if(t < 3600.0)
+                count_below_1_hour++;
+            avg+=t/numCollected;
         }
-        avg/=agrid.obtainedWeedCrops.size();
+        std::cout<<std::endl;
+        
         for(auto it : agrid.obtainedWeedCrops)
         {
             variance+=pow(avg-(it.getDateObtained()-it.getDateIssued())/1000.0,2);
         }
         variance = sqrt(variance/agrid.obtainedWeedCrops.size());
-
+        std::cout<<"Nagent : "<<input.N<<std::endl;
         std::cout<<"Average Time for a crop to be found : "<<avg<<std::endl;
-        std::cout<<"Asscociated Variance  : "<<variance<<std::endl;
-
+        std::cout<<"Associated Variance  : "<<variance<<std::endl;
+        std::cout<<"Number of crops found below 1 hour "<<count_below_1_hour<<std::endl;
 
     }
 

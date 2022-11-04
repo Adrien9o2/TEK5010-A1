@@ -11,10 +11,10 @@
 int Agent::TotalnumberOfAgent = 0;
 int WeedCrop::TotalnumberOfCrops = 0;
 
-WeedCrop::WeedCrop(int date)
+WeedCrop::WeedCrop(long long int date)
 {
-    x = rand()%1000 + (rand()%100)/100; //Random init
-    y = rand()%1000 + (rand()%100)/100;
+    x = rand()%(BORDERSIZE-1) + (rand()%100)/100; //Random init
+    y = rand()%(BORDERSIZE-1) + (rand()%100)/100;
     issuedDate = date; // Creation date to keep track of performances
     obtainedDate = -1;
     obtained = false;
@@ -60,6 +60,8 @@ Agent::Agent(bool randompos,double v_input , double Tr_input)
     Tr = Tr_input;
     v = v_input;
     id = TotalnumberOfAgent;
+    lastx = x;
+    lasty = y;
 
 }
 
@@ -82,6 +84,8 @@ Agent::Agent(double x_input, double y_input, double v_input , double Tr_input )
     Tr = std::fabs(Tr_input);
     v = std::fabs(v_input);
     id = TotalnumberOfAgent;
+    lastx = x;
+    lasty = y;
 
 }
 
@@ -136,7 +140,9 @@ Border Agent::isPosOkay(double x, double y)
 }
 
 void Agent::updatePos(double dt,double degRange) //Update pos of one Agent
-{   
+{
+    lastx = x;
+    lasty = y;   
     int degRangeint = 1000*degRange; //Generating random angle with 10^-3 precision
     bool sgn = rand()%2; // Generating random sign
     int thetaRandint = rand()%degRangeint; //Generating random angle with 10^-3 precision
@@ -184,6 +190,7 @@ void Agent::updatePos(double dt,double degRange) //Update pos of one Agent
         y = BORDERSIZE/2;
         theta = 0.0;
     }
+    
     
 
 }

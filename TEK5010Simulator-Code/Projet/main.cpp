@@ -1,5 +1,7 @@
 #include "../include/sdlDDR.h"
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
 
 /*! \file main.cpp
@@ -11,6 +13,16 @@
 
 mainSdlInput input = {1,1,5.0,10.0,1,true,true,100};
 
+
+int nagentGenerator()
+{
+    static int i = 1;
+    static int count = 4385;
+    if(i++ > 20)
+        count = 4385;
+    count = count*1.1;
+    return count;
+}
 
 
 int main(int argc, char* argv[]) {
@@ -28,8 +40,8 @@ int main(int argc, char* argv[]) {
     printf(" \n");
     printf(" \n");
     printf(" \n");
-    printf("Enter number of Agents (int) : \n");
-    std::cin>>(input.N);
+    // printf("Enter number of Agents (int) : \n");
+    // std::cin>>(input.N);
     printf("Enter number of Crops (int) : \n");
     std::cin>>(input.Nc);
     printf("\n \n Enter radius Tr (double) : \n");
@@ -67,7 +79,14 @@ int main(int argc, char* argv[]) {
     /* ------------------------- */
 
             // SESSION SDL
-   mainsdl(input);
+   std::vector<int> tab (20);
+   std::generate (tab.begin(), tab.end(), nagentGenerator);
+   for(auto it : tab)
+   {
+        input.N = it;
+        mainsdl(input);
+   }
+   
    /* ------------------------- */
 
     SDL_Quit();

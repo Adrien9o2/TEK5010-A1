@@ -36,7 +36,7 @@ class Grid
         std::vector<WeedCrop> obtainedWeedCrops;
         Grid(int numberOfAgents=1,int numberOfWeedCrop=1, double Vit= 10.0, double Tr = 5.0);
         ~Grid();
-        void updateAgents(int date, double dt, double degRange = 5.0);
+        void updateAgents(long long int date, double dt, double degRange = 5.0);
         void ConvertPos();
 };
 
