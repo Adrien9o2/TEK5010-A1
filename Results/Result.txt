@@ -2,8 +2,6 @@ NumAgent	Mean		Variance	NumBelow1hour
 1		6.11193e+06	4.64239e+06	0
 5		1.18587e+06	1.26442e+06	1
 
---------Simulation END--------
-
 
 Nagent : 10
 Average Time for a crop to be found : 545590
@@ -365,30 +363,8 @@ Nagent : 542
 Average Time for a crop to be found : 10862.3
 Asscociated Variance  : 12641.1
 Number of crops found below 1 hour 30
-Average Time for a crop to be found : 12410.1
-Asscociated Variance  : 12866.8
-Number of crops found below 1 hour 26
 --------Simulation END--------
 
-
-Nagent : 449
-Average Time for a crop to be found : 13170.3
-Asscociated Variance  : 11788.2
-Number of crops found below 1 hour 23
---------Simulation END--------
-
-
-Nagent : 493
-Average Time for a crop to be found : 10255.4
-Asscociated Variance  : 10395.9
-Number of crops found below 1 hour 29
---------Simulation END--------
-
-
-Nagent : 542
-Average Time for a crop to be found : 10862.3
-Asscociated Variance  : 12641.1
-Number of crops found below 1 hour 30
 
 Nagent : 596
 Average Time for a crop to be found : 10878
@@ -401,6 +377,8 @@ Nagent : 655
 Average Time for a crop to be found : 8375.22
 Asscociated Variance  : 8956.78
 Number of crops found below 1 hour 42
+--------Simulation END--------
+
 
 Nagent : 720
 Average Time for a crop to be found : 8077.29
@@ -434,8 +412,6 @@ Nagent : 1053
 Average Time for a crop to be found : 6119.81
 Asscociated Variance  : 5891.82
 Number of crops found below 1 hour 42
-
-
 --------Simulation END--------
 
 
@@ -485,6 +461,8 @@ Nagent : 2049
 Average Time for a crop to be found : 2744.4
 Asscociated Variance  : 2664.44
 Number of crops found below 1 hour 73
+--------Simulation END--------
+
 
 Nagent : 2253
 Average Time for a crop to be found : 2466.03
@@ -539,6 +517,8 @@ Nagent : 4385
 Average Time for a crop to be found : 1218.4
 Asscociated Variance  : 949.972
 Number of crops found below 1 hour 97
+--------Simulation END--------
+
 
 Nagent : 4823
 Average Time for a crop to be found : 1131.04
@@ -558,7 +538,7 @@ Nagent : 5835
 Average Time for a crop to be found : 901.9
 Asscociated Variance  : 760.306
 Number of crops found below 1 hour 99
-
+--------Simulation END--------
 
 
 Nagent : 6418
@@ -586,3 +566,5 @@ Nagent : 8540
 Average Time for a crop to be found : 737.64
 Asscociated Variance  : 745.001
 Number of crops found below 1 hour 99
+--------Simulation END--------
+
