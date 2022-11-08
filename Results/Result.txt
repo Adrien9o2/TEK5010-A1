@@ -1,570 +1,70 @@
 NumAgent	Mean		Variance	NumBelow1hour
 1		6.11193e+06	4.64239e+06	0
 5		1.18587e+06	1.26442e+06	1
-
-
-Nagent : 10
-Average Time for a crop to be found : 545590
-Asscociated Variance  : 539728
-Number of crops found below 1 hour 2
---------Simulation END--------
-
-
-Nagent : 15
-Average Time for a crop to be found : 354845
-Asscociated Variance  : 353957
-Number of crops found below 1 hour 1
---------Simulation END--------
-
-
-Nagent : 20
-Average Time for a crop to be found : 279563
-Asscociated Variance  : 280570
-Number of crops found below 1 hour 1
---------Simulation END--------
-
-
-Nagent : 25
-Average Time for a crop to be found : 206529
-Asscociated Variance  : 220526
-Number of crops found below 1 hour 3
---------Simulation END--------
-
-
-Nagent : 30
-Average Time for a crop to be found : 178982
-Asscociated Variance  : 200858
-Number of crops found below 1 hour 2
---------Simulation END--------
-
-
-Nagent : 35
-Average Time for a crop to be found : 177913
-Asscociated Variance  : 158583
-Number of crops found below 1 hour 1
---------Simulation END--------
-
-
-Nagent : 40
-Average Time for a crop to be found : 143821
-Asscociated Variance  : 138388
-Number of crops found below 1 hour 2
---------Simulation END--------
-
-
-Nagent : 45
-Average Time for a crop to be found : 126378
-Asscociated Variance  : 135503
-Number of crops found below 1 hour 2
---------Simulation END--------
-
-
-Nagent : 50
-Average Time for a crop to be found : 120473
-Asscociated Variance  : 113733
-Number of crops found below 1 hour 0
---------Simulation END--------
-
-
-Nagent : 55
-Average Time for a crop to be found : 98425.8
-Asscociated Variance  : 86094.9
-Number of crops found below 1 hour 7
---------Simulation END--------
-
-
-Nagent : 60
-Average Time for a crop to be found : 98650.6
-Asscociated Variance  : 93154.4
-Number of crops found below 1 hour 4
---------Simulation END--------
-
-
-Nagent : 65
-Average Time for a crop to be found : 84409.5
-Asscociated Variance  : 84055.6
-Number of crops found below 1 hour 2
---------Simulation END--------
-
-
-Nagent : 70
-Average Time for a crop to be found : 84411.7
-Asscociated Variance  : 81937.2
-Number of crops found below 1 hour 7
---------Simulation END--------
-
-
-Nagent : 75
-Average Time for a crop to be found : 72495.4
-Asscociated Variance  : 80416.2
-Number of crops found below 1 hour 7
---------Simulation END--------
-
-
-Nagent : 80
-Average Time for a crop to be found : 76594.9
-Asscociated Variance  : 71902.7
-Number of crops found below 1 hour 7
---------Simulation END--------
-
-
-Nagent : 85
-Average Time for a crop to be found : 60790.2
-Asscociated Variance  : 63464.5
-Number of crops found below 1 hour 2
---------Simulation END--------
-
-
-Nagent : 90
-Average Time for a crop to be found : 68722.2
-Asscociated Variance  : 60960.5
-Number of crops found below 1 hour 4
---------Simulation END--------
-
-
-Nagent : 95
-Average Time for a crop to be found : 58328.3
-Asscociated Variance  : 56708.3
-Number of crops found below 1 hour 4
---------Simulation END--------
-
-
-Nagent : 100
-Average Time for a crop to be found : 59725.2
-Asscociated Variance  : 64532.4
-Number of crops found below 1 hour 8
---------Simulation END--------
-
-
-Nagent : 105
-Average Time for a crop to be found : 49893.1
-Asscociated Variance  : 47902.1
-Number of crops found below 1 hour 10
-
-
-Nagent : 110
-Average Time for a crop to be found : 49621.6
-Asscociated Variance  : 43673.7
-Number of crops found below 1 hour 3
---------Simulation END--------
-
-
-Nagent : 121
-Average Time for a crop to be found : 37849.3
-Asscociated Variance  : 32309.2
-Number of crops found below 1 hour 7
---------Simulation END--------
-
-
-Nagent : 133
-Average Time for a crop to be found : 42207.8
-Asscociated Variance  : 38309.7
-Number of crops found below 1 hour 5
---------Simulation END--------
-
-
-Nagent : 146
-Average Time for a crop to be found : 49505.3
-Asscociated Variance  : 88497
-Number of crops found below 1 hour 3
---------Simulation END--------
-
-
-Nagent : 160
-Average Time for a crop to be found : 38899
-Asscociated Variance  : 37226.7
-Number of crops found below 1 hour 6
---------Simulation END--------
-
-
-Nagent : 176
-Average Time for a crop to be found : 29961.2
-Asscociated Variance  : 28229.6
-Number of crops found below 1 hour 5
---------Simulation END--------
-
-
-Nagent : 193
-Average Time for a crop to be found : 26978.4
-Asscociated Variance  : 24280.9
-Number of crops found below 1 hour 13
---------Simulation END--------
-
-
-Nagent : 212
-Average Time for a crop to be found : 23737.1
-Asscociated Variance  : 23411.7
-Number of crops found below 1 hour 15
---------Simulation END--------
-
-
-Nagent : 233
-Average Time for a crop to be found : 28017
-Asscociated Variance  : 25739.7
-Number of crops found below 1 hour 14
---------Simulation END--------
-
-
-Nagent : 256
-Average Time for a crop to be found : 19064.9
-Asscociated Variance  : 17152.2
-Number of crops found below 1 hour 18
---------Simulation END--------
-
-
-Nagent : 281
-Average Time for a crop to be found : 19032.2
-Asscociated Variance  : 16005.4
-Number of crops found below 1 hour 15
---------Simulation END--------
-
-
-Nagent : 309
-Average Time for a crop to be found : 17669.1
-Asscociated Variance  : 16412.2
-Number of crops found below 1 hour 16
---------Simulation END--------
-
-
-Nagent : 339
-Average Time for a crop to be found : 14917.9
-Asscociated Variance  : 13303.2
-Number of crops found below 1 hour 18
---------Simulation END--------
-
-
-Nagent : 372
-Average Time for a crop to be found : 15820.8
-Asscociated Variance  : 17488.2
-Number of crops found below 1 hour 19
---------Simulation END--------
-
-
-Nagent : 409Nagent : 110
-Average Time for a crop to be found : 49621.6
-Asscociated Variance  : 43673.7
-Number of crops found below 1 hour 3
---------Simulation END--------
-
-
-Nagent : 121
-Average Time for a crop to be found : 37849.3
-Asscociated Variance  : 32309.2
-Number of crops found below 1 hour 7
---------Simulation END--------
-
-
-Nagent : 133
-Average Time for a crop to be found : 42207.8
-Asscociated Variance  : 38309.7
-Number of crops found below 1 hour 5
---------Simulation END--------
-
-
-Nagent : 146
-Average Time for a crop to be found : 49505.3
-Asscociated Variance  : 88497
-Number of crops found below 1 hour 3
---------Simulation END--------
-
-
-Nagent : 160
-Average Time for a crop to be found : 38899
-Asscociated Variance  : 37226.7
-Number of crops found below 1 hour 6
---------Simulation END--------
-
-
-Nagent : 176
-Average Time for a crop to be found : 29961.2
-Asscociated Variance  : 28229.6
-Number of crops found below 1 hour 5
---------Simulation END--------
-
-
-Nagent : 193
-Average Time for a crop to be found : 26978.4
-Asscociated Variance  : 24280.9
-Number of crops found below 1 hour 13
---------Simulation END--------
-
-
-Nagent : 212
-Average Time for a crop to be found : 23737.1
-Asscociated Variance  : 23411.7
-Number of crops found below 1 hour 15
---------Simulation END--------
-
-
-Nagent : 233
-Average Time for a crop to be found : 28017
-Asscociated Variance  : 25739.7
-Number of crops found below 1 hour 14
---------Simulation END--------
-
-
-Nagent : 256
-Average Time for a crop to be found : 19064.9
-Asscociated Variance  : 17152.2
-Number of crops found below 1 hour 18
---------Simulation END--------
-
-
-Nagent : 281
-Average Time for a crop to be found : 19032.2
-Asscociated Variance  : 16005.4
-Number of crops found below 1 hour 15
---------Simulation END--------
-
-
-Nagent : 309
-Average Time for a crop to be found : 17669.1
-Asscociated Variance  : 16412.2
-Number of crops found below 1 hour 16
---------Simulation END--------
-
-
-Nagent : 339
-Average Time for a crop to be found : 14917.9
-Asscociated Variance  : 13303.2
-Number of crops found below 1 hour 18
---------Simulation END--------
-
-
-Nagent : 372
-Average Time for a crop to be found : 15820.8
-Asscociated Variance  : 17488.2
-Number of crops found below 1 hour 19
---------Simulation END--------
-
-
-Nagent : 409
-Average Time for a crop to be found : 12410.1
-Asscociated Variance  : 12866.8
-Number of crops found below 1 hour 26
---------Simulation END--------
-
-
-Nagent : 449
-Average Time for a crop to be found : 13170.3
-Asscociated Variance  : 11788.2
-Number of crops found below 1 hour 23
---------Simulation END--------
-
-
-Nagent : 493
-Average Time for a crop to be found : 10255.4
-Asscociated Variance  : 10395.9
-Number of crops found below 1 hour 29
---------Simulation END--------
-
-
-Nagent : 542
-Average Time for a crop to be found : 10862.3
-Asscociated Variance  : 12641.1
-Number of crops found below 1 hour 30
---------Simulation END--------
-
-
-Nagent : 596
-Average Time for a crop to be found : 10878
-Asscociated Variance  : 11311.6
-Number of crops found below 1 hour 28
---------Simulation END--------
-
-
-Nagent : 655
-Average Time for a crop to be found : 8375.22
-Asscociated Variance  : 8956.78
-Number of crops found below 1 hour 42
---------Simulation END--------
-
-
-Nagent : 720
-Average Time for a crop to be found : 8077.29
-Asscociated Variance  : 10596.1
-Number of crops found below 1 hour 41
---------Simulation END--------
-
-
-Nagent : 792
-Average Time for a crop to be found : 7167.4
-Asscociated Variance  : 7756.02
-Number of crops found below 1 hour 37
---------Simulation END--------
-
-
-Nagent : 871
-Average Time for a crop to be found : 9140.89
-Asscociated Variance  : 14298.6
-Number of crops found below 1 hour 39
---------Simulation END--------
-
-
-Nagent : 958
-Average Time for a crop to be found : 6091.83
-Asscociated Variance  : 5748.39
-Number of crops found below 1 hour 42
---------Simulation END--------
-
-
-Nagent : 1053
-Average Time for a crop to be found : 6119.81
-Asscociated Variance  : 5891.82
-Number of crops found below 1 hour 42
---------Simulation END--------
-
-
-Nagent : 1158
-Average Time for a crop to be found : 6101.87
-Asscociated Variance  : 5270.08
-Number of crops found below 1 hour 41
---------Simulation END--------
-
-
-Nagent : 1273
-Average Time for a crop to be found : 3965.31
-Asscociated Variance  : 5473.26
-Number of crops found below 1 hour 66
---------Simulation END--------
-
-
-Nagent : 1400
-Average Time for a crop to be found : 3875.75
-Asscociated Variance  : 3769.68
-Number of crops found below 1 hour 62
---------Simulation END--------
-
-
-Nagent : 1540
-Average Time for a crop to be found : 3319.72
-Asscociated Variance  : 3056.65
-Number of crops found below 1 hour 67
---------Simulation END--------
-
-
-Nagent : 1694
-Average Time for a crop to be found : 3708.44
-Asscociated Variance  : 4428.1
-Number of crops found below 1 hour 63
---------Simulation END--------
-
-
-Nagent : 1863
-Average Time for a crop to be found : 3082.43
-Asscociated Variance  : 3149.63
-Number of crops found below 1 hour 68
---------Simulation END--------
-
-
-Nagent : 2049
-Average Time for a crop to be found : 2744.4
-Asscociated Variance  : 2664.44
-Number of crops found below 1 hour 73
---------Simulation END--------
-
-
-Nagent : 2253
-Average Time for a crop to be found : 2466.03
-Asscociated Variance  : 2590.2
-Number of crops found below 1 hour 78
---------Simulation END--------
-
-
-Nagent : 2478
-Average Time for a crop to be found : 2073.69
-Asscociated Variance  : 2157.36
-Number of crops found below 1 hour 79
---------Simulation END--------
-
-
-Nagent : 2725
-Average Time for a crop to be found : 2011.38
-Asscociated Variance  : 2027.17
-Number of crops found below 1 hour 81
---------Simulation END--------
-
-
-Nagent : 2997
-Average Time for a crop to be found : 1767.44
-Asscociated Variance  : 1616.53
-Number of crops found below 1 hour 86
---------Simulation END--------
-
-
-Nagent : 3296
-Average Time for a crop to be found : 1727.07
-Asscociated Variance  : 1582.44
-Number of crops found below 1 hour 90
---------Simulation END--------
-
-
-Nagent : 3625
-Average Time for a crop to be found : 1510.54
-Asscociated Variance  : 1436.57
-Number of crops found below 1 hour 89
---------Simulation END--------
-
-
-Nagent : 3987
-Average Time for a crop to be found : 1410.11
-Asscociated Variance  : 1401.29
-Number of crops found below 1 hour 95
---------Simulation END--------
-
-
-Nagent : 4385
-Average Time for a crop to be found : 1218.4
-Asscociated Variance  : 949.972
-Number of crops found below 1 hour 97
---------Simulation END--------
-
-
-Nagent : 4823
-Average Time for a crop to be found : 1131.04
-Asscociated Variance  : 1027.25
-Number of crops found below 1 hour 96
---------Simulation END--------
-
-
-Nagent : 5305
-Average Time for a crop to be found : 938.38
-Asscociated Variance  : 920.312
-Number of crops found below 1 hour 97
---------Simulation END--------
-
-
-Nagent : 5835
-Average Time for a crop to be found : 901.9
-Asscociated Variance  : 760.306
-Number of crops found below 1 hour 99
---------Simulation END--------
-
-
-Nagent : 6418
-Average Time for a crop to be found : 848.76
-Asscociated Variance  : 883.88
-Number of crops found below 1 hour 99
---------Simulation END--------
-
-
-Nagent : 7059
-Average Time for a crop to be found : 880.62
-Asscociated Variance  : 915.39
-Number of crops found below 1 hour 98
---------Simulation END--------
-
-
-Nagent : 7764
-Average Time for a crop to be found : 763.03
-Asscociated Variance  : 784.96
-Number of crops found below 1 hour 99
---------Simulation END--------
-
-
-Nagent : 8540
-Average Time for a crop to be found : 737.64
-Asscociated Variance  : 745.001
-Number of crops found below 1 hour 99
---------Simulation END--------
-
+10      545590      539728      2
+15      354845      353957      1
+20      279563      280570      1
+25      206529      220526      3
+30      178982      200858      2
+35      177913      158583      1
+40      143821      138388      2
+45      126378      135503      2
+50      120473      113733      0
+55      98425.8     86094.9     7
+60      98650.6     93154.4     4
+65      84409.5     84055.6     2
+70      84411.7     81937.2     7
+75      72495.4     80416.2     7
+80      76594.9     71902.7     7
+85      60790.2     63464.5     2
+90      68722.2     60960.5     4
+95      58328.3     56708.3     4
+100     59725.2     64532.4     8
+105     49893.1     47902.1     10
+110     49621.6     43673.7     3
+121     37849.3     32309.2     7
+133     42207.8     38309.7     5
+146     49505.3     88497       3
+160     38899       37226.7     6
+176     29961.2     28229.6     5
+193     26978.4     24280.9     13
+212     23737.1     23411.7     15
+233     28017       25739.7     14
+256     19064.9     17152.2     18
+281     19032.2     16005.4     15
+309     17669.1     16412.2     16
+339     14917.9     13303.2     18
+372     15820.8     17488.2     19
+409     12410.1     12866.8     26
+449     13170.3     11788.2     23
+493     10255.4     10395.9     29
+542     10862.3     12641.1     30
+596     10878       11311.6     28
+655     8375.22     8956.78     42
+720     8077.29     10596.1     41
+792     7167.4      7756.02     37
+871     9140.89     14298.6     39
+958     6091.83     5748.39     42
+1053        6119.81     5891.82     42
+1158        6101.87     5270.08     41
+1273        3965.31     5473.26     66
+1400        3875.75     3769.68     62
+1540        3319.72     3056.65     67
+1694        3708.44     4428.1      63
+1863        3082.43     3149.63     68
+2049        2744.4      2664.44     73
+2253        2466.03     2590.2      78
+2478        2073.69     2157.36     79
+2725        2011.38     2027.17     81
+2997        1767.44     1616.53     86
+3296        1727.07     1582.44     90
+3625        1510.54     1436.57     89
+3987        1410.11     1401.29     95
+4385        1218.4      949.972     97
+4823        1131.04     1027.25     96
+5305        938.38      920.312     97
+5835        901.9       760.306     99
+6418        848.76      883.88      99
+7059        880.62      915.39      98
+7764        763.03      784.96      99
+8540        737.64      745.001     99
